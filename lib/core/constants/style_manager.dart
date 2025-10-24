@@ -1,10 +1,15 @@
 import 'package:dar_alazez/core/constants/font_manager.dart';
 import 'package:flutter/widgets.dart';
 
-TextStyle _getTextSytle(double fontSize, FontWeight fontWeight, Color color) {
+TextStyle _getTextSytle(
+  double fontSize,
+  FontWeight fontWeight,
+  Color color,
+  String fontFamily,
+) {
   return TextStyle(
     fontSize: fontSize,
-    fontFamily: FontConstants.fontFamily,
+    fontFamily: fontFamily,
     color: color,
     fontWeight: fontWeight,
   );
@@ -13,28 +18,31 @@ TextStyle _getTextSytle(double fontSize, FontWeight fontWeight, Color color) {
 TextStyle getRegularSyle({
   double fontSize = FontSize.s12c,
   required Color color,
+  required String fontFamily,
 }) {
-  return _getTextSytle(fontSize, FontWeightManager.regular, color);
+  return _getTextSytle(fontSize, FontWeightManager.regular, color, fontFamily);
 }
 
 TextStyle getMediumSyle({
   double fontSize = FontSize.s12c,
   required Color color,
+  required String fontFamily,
 }) {
-  return _getTextSytle(fontSize, FontWeightManager.medium, color);
+  return _getTextSytle(fontSize, FontWeightManager.medium, color, fontFamily);
 }
 
-TextStyle getLightSyle({double fontSize = FontSize.s12c, required Color color}) {
-  return _getTextSytle(fontSize, FontWeightManager.light, color);
-}
-
-TextStyle getBoldSyle({double fontSize = FontSize.s12c, required Color color}) {
-  return _getTextSytle(fontSize, FontWeightManager.bold, color);
+TextStyle getBoldSyle({
+  double fontSize = FontSize.s12c,
+  required Color color,
+  required String fontFamily,
+}) {
+  return _getTextSytle(fontSize, FontWeightManager.bold, color, fontFamily);
 }
 
 TextStyle getSemiBoldSyle({
   double fontSize = FontSize.s12c,
   required Color color,
+  required String fontFamily,
 }) {
-  return _getTextSytle(fontSize, FontWeightManager.semiBold, color);
+  return _getTextSytle(fontSize, FontWeightManager.semiBold, color, fontFamily);
 }

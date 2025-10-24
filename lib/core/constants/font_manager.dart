@@ -2,11 +2,11 @@ import 'package:dar_alazez/core/utils/double_utils.dart';
 import 'package:flutter/material.dart';
 
 class FontConstants {
-  static const String fontFamily = "Nunito";
+  static const String amiriFamily = "Amiri";
+  static const String elMessiriFamily = "ElMessiri";
 }
 
 class FontWeightManager {
-  static const FontWeight light = FontWeight.w300;
   static const FontWeight regular = FontWeight.w400;
   static const FontWeight medium = FontWeight.w500;
   static const FontWeight semiBold = FontWeight.w600;

@@ -28,6 +28,7 @@ ThemeData getLightTheme() {
       titleTextStyle: getRegularSyle(
         fontSize: FontSize.s16,
         color: ColorManager.white,
+        fontFamily: FontConstants.amiriFamily,
       ),
     ),
 
@@ -45,6 +46,7 @@ ThemeData getLightTheme() {
         textStyle: getRegularSyle(
           color: ColorManager.white,
           fontSize: FontSize.s17,
+          fontFamily: FontConstants.elMessiriFamily,
         ),
         shape: RoundedRectangleBorder(
           borderRadius: BorderRadiusGeometry.circular(AppSize.s12),
@@ -55,31 +57,44 @@ ThemeData getLightTheme() {
 
     // text theme
     textTheme: TextTheme(
-      displayLarge: getLightSyle(
+      displayLarge: getRegularSyle(
         color: ColorManager.white,
         fontSize: FontSize.s40,
+        fontFamily: FontConstants.amiriFamily,
       ),
       headlineLarge: getBoldSyle(
         color: ColorManager.white,
         fontSize: FontSize.s16,
+        fontFamily: FontConstants.elMessiriFamily,
       ),
-      titleLarge: getLightSyle(
+      titleLarge: getRegularSyle(
         color: ColorManager.white,
         fontSize: FontSize.s14,
+        fontFamily: FontConstants.elMessiriFamily,
       ),
-      bodyLarge: getRegularSyle(color: ColorManager.white),
+      bodyLarge: getRegularSyle(
+        color: ColorManager.white,
+        fontFamily: FontConstants.elMessiriFamily,
+      ),
 
-      bodySmall: getLightSyle(
+      bodySmall: getRegularSyle(
         color: ColorManager.primary,
         fontSize: FontSize.s12,
+        fontFamily: FontConstants.elMessiriFamily,
       ),
     ),
 
     // input decoration theme
     inputDecorationTheme: InputDecorationTheme(
       contentPadding: EdgeInsets.all(AppPadding.p8),
-      hintStyle: getRegularSyle(color: ColorManager.grey),
-      errorStyle: getRegularSyle(color: ColorManager.error),
+      hintStyle: getRegularSyle(
+        color: ColorManager.grey,
+        fontFamily: FontConstants.elMessiriFamily,
+      ),
+      errorStyle: getRegularSyle(
+        color: ColorManager.error,
+        fontFamily: FontConstants.elMessiriFamily,
+      ),
       enabledBorder: OutlineInputBorder(
         borderSide: BorderSide(
           color: ColorManager.primary,
