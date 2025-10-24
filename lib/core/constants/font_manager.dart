@@ -1,3 +1,4 @@
+import 'package:dar_alazez/core/utils/double_utils.dart';
 import 'package:flutter/material.dart';
 
 class FontConstants {
@@ -13,11 +14,13 @@ class FontWeightManager {
 }
 
 class FontSize {
-  static const double s12 = 12.0;
-  static const double s14 = 14.0;
-  static const double s16 = 16.0;
-  static const double s17 = 17.0;
-  static const double s18 = 18.0;
-  static const double s20 = 20.0;
-  static const double s22 = 22.0;
+  static const double s12c = 12;
+  static double s12 = DoubleUtils.getAdaptiveWidth(12);
+  static double s14 = DoubleUtils.getAdaptiveWidth(14);
+  static double s16 = DoubleUtils.getAdaptiveWidth(16);
+  static double s17 = DoubleUtils.getAdaptiveWidth(17);
+  static double s18 = DoubleUtils.getAdaptiveWidth(18);
+  static double s20 = DoubleUtils.getAdaptiveWidth(20);
+  static double s22 = DoubleUtils.getAdaptiveWidth(22);
+  static double s40 = DoubleUtils.getAdaptiveWidth(40);
 }

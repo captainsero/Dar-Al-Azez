@@ -57,7 +57,7 @@ ThemeData getLightTheme() {
     textTheme: TextTheme(
       displayLarge: getLightSyle(
         color: ColorManager.white,
-        fontSize: FontSize.s22,
+        fontSize: FontSize.s40,
       ),
       headlineLarge: getBoldSyle(
         color: ColorManager.white,
