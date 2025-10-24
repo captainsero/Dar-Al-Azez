@@ -58,8 +58,18 @@ ThemeData getLightTheme() {
     // text theme
     textTheme: TextTheme(
       displayLarge: getRegularSyle(
-        color: ColorManager.white,
+        color: ColorManager.primary,
         fontSize: FontSize.s40,
+        fontFamily: FontConstants.amiriFamily,
+      ),
+      displayMedium: getRegularSyle(
+        color: ColorManager.primary,
+        fontSize: FontSize.s30,
+        fontFamily: FontConstants.amiriFamily,
+      ),
+      displaySmall: getRegularSyle(
+        color: ColorManager.primary,
+        fontSize: FontSize.s22,
         fontFamily: FontConstants.amiriFamily,
       ),
       headlineLarge: getBoldSyle(

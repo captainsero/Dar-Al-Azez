@@ -2,33 +2,31 @@ import 'package:dar_alazez/core/constants/assets_manager.dart';
 import 'package:dar_alazez/core/constants/color_manager.dart';
 import 'package:dar_alazez/core/constants/strings_manager.dart';
 import 'package:dar_alazez/core/constants/values_manager.dart';
+import 'package:dar_alazez/core/widget/modern_circular_indicator.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_svg/flutter_svg.dart';
 
-class SplashScreen extends StatefulWidget {
+class SplashScreen extends StatelessWidget {
   const SplashScreen({super.key});
 
   @override
-  State<SplashScreen> createState() => _SplashScreenState();
-}
-
-class _SplashScreenState extends State<SplashScreen> {
-  @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: ColorManager.primary,
+      backgroundColor: ColorManager.darkLight,
       body: Center(
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: [
-            CircleAvatar(
-              backgroundImage: AssetImage(ImageAssets.logoB),
-              radius: AppSize.s100,
-            ),
-            Text(
-              AppStrings.darAlazez,
-              style: Theme.of(context).textTheme.displayLarge,
-            ),
-          ],
+        child: SingleChildScrollView(
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              SvgPicture.asset(ImageAssets.logo, height: 500),
+              Text(
+                AppStrings.forQuran,
+                style: Theme.of(context).textTheme.displayLarge,
+              ),
+              SizedBox(height: AppSize.s40),
+              ModernCircularIndicator(),
+            ],
+          ),
         ),
       ),
     );

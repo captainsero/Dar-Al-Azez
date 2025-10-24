@@ -22,5 +22,6 @@ class FontSize {
   static double s18 = DoubleUtils.getAdaptiveWidth(18);
   static double s20 = DoubleUtils.getAdaptiveWidth(20);
   static double s22 = DoubleUtils.getAdaptiveWidth(22);
+  static double s30 = DoubleUtils.getAdaptiveWidth(30);
   static double s40 = DoubleUtils.getAdaptiveWidth(40);
 }
