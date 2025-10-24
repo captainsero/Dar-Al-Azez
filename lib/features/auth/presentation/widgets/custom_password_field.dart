@@ -24,7 +24,6 @@ class _CustomPasswordFieldState extends State<CustomPasswordField> {
         obscureText: obscure,
         textDirection: TextDirection.rtl,
         textAlign: TextAlign.right,
-        obscuringCharacter: '*',
         decoration: InputDecoration(
           hintText: widget.hint,
           prefixIcon: IconButton(
