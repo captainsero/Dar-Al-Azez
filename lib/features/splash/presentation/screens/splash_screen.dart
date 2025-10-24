@@ -22,7 +22,9 @@ class _SplashScreenState extends State<SplashScreen> {
   @override
   void initState() {
     super.initState();
-    timer = SplashScreenLogic.startTimer(() => SplashScreenLogic.goNext(context));
+    timer = SplashScreenLogic.startTimer(
+      () => SplashScreenLogic.goNext(context),
+    );
   }
 
   @override
@@ -34,7 +36,7 @@ class _SplashScreenState extends State<SplashScreen> {
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
-              SvgPicture.asset(ImageAssets.logo, height: 500),
+              SvgPicture.asset(ImageAssets.logoSVGColor, height: AppSize.s300),
               Text(
                 AppStrings.forQuran,
                 style: Theme.of(context).textTheme.displayLarge,

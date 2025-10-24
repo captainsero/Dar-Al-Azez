@@ -32,4 +32,6 @@ class AppSize {
   static double s50 = DoubleUtils.getAdaptiveWidth(50.0);
   static double s60 = DoubleUtils.getAdaptiveHeight(60.0);
   static double s100 = DoubleUtils.getAdaptiveHeight(100.0);
+  static double s300 = DoubleUtils.getAdaptiveHeight(300.0);
+  static double s400 = DoubleUtils.getAdaptiveHeight(400.0);
 }

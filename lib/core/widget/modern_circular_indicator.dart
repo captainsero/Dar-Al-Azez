@@ -12,7 +12,7 @@ class ModernCircularIndicator extends StatelessWidget {
         width: AppSize.s40,
         height: AppSize.s40,
         child: CircularProgressIndicator(
-          strokeWidth: 6,
+          strokeWidth: 5,
           valueColor: AlwaysStoppedAnimation<Color>(
             ColorManager.primary,
           ), // primary color

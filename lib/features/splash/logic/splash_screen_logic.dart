@@ -10,7 +10,7 @@ class SplashScreenLogic {
   }
 
   static goNext(BuildContext context) {
-    Navigator.pushReplacementNamed(context, Routes.noteRoute);
+    Navigator.pushReplacementNamed(context, Routes.loginRoute);
   }
 
   static dispose(Timer? timer) {
