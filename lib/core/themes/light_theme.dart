@@ -73,13 +73,23 @@ ThemeData getLightTheme() {
         fontFamily: FontConstants.amiriFamily,
       ),
       headlineLarge: getBoldSyle(
-        color: ColorManager.white,
+        color: ColorManager.primary,
+        fontSize: FontSize.s20,
+        fontFamily: FontConstants.elMessiriFamily,
+      ),
+      headlineMedium: getMediumSyle(
+        color: ColorManager.primary,
+        fontSize: FontSize.s16,
+        fontFamily: FontConstants.elMessiriFamily,
+      ),
+      headlineSmall: getRegularSyle(
+        color: ColorManager.primary,
         fontSize: FontSize.s16,
         fontFamily: FontConstants.elMessiriFamily,
       ),
       titleLarge: getRegularSyle(
         color: ColorManager.white,
-        fontSize: FontSize.s14,
+        fontSize: FontSize.s16,
         fontFamily: FontConstants.elMessiriFamily,
       ),
       bodyLarge: getRegularSyle(
@@ -92,28 +102,46 @@ ThemeData getLightTheme() {
         fontSize: FontSize.s12,
         fontFamily: FontConstants.elMessiriFamily,
       ),
+
+      labelLarge: getRegularSyle(
+        color: ColorManager.primary,
+        fontSize: FontSize.s22,
+        fontFamily: FontConstants.elMessiriFamily,
+      ),
+      labelMedium: getRegularSyle(
+        color: ColorManager.primary,
+        fontSize: FontSize.s14,
+        fontFamily: FontConstants.elMessiriFamily,
+      ),
     ),
 
     // input decoration theme
     inputDecorationTheme: InputDecorationTheme(
+      filled: true,
+      fillColor: ColorManager.white,
       contentPadding: EdgeInsets.all(AppPadding.p8),
       hintStyle: getRegularSyle(
         color: ColorManager.grey,
         fontFamily: FontConstants.elMessiriFamily,
       ),
+      helperStyle: getRegularSyle(
+        color: ColorManager.white,
+        fontFamily: FontConstants.elMessiriFamily,
+      ),
+
       errorStyle: getRegularSyle(
         color: ColorManager.error,
         fontFamily: FontConstants.elMessiriFamily,
       ),
-      enabledBorder: OutlineInputBorder(
+      // enabledBorder: OutlineInputBorder(
+      //   borderSide: BorderSide(color: ColorManager.white, width: AppSize.s1_5),
+      //   borderRadius: BorderRadius.circular(AppSize.s8),
+      // ),
+      focusedBorder: OutlineInputBorder(
         borderSide: BorderSide(
-          color: ColorManager.primary,
+          color: ColorManager.lightPrimary,
           width: AppSize.s1_5,
         ),
-        borderRadius: BorderRadius.circular(AppSize.s8),
-      ),
-      focusedBorder: OutlineInputBorder(
-        borderSide: BorderSide(color: ColorManager.grey, width: AppSize.s1_5),
         borderRadius: BorderRadius.circular(AppSize.s8),
       ),
       errorBorder: OutlineInputBorder(
@@ -122,7 +150,7 @@ ThemeData getLightTheme() {
       ),
       focusedErrorBorder: OutlineInputBorder(
         borderSide: BorderSide(
-          color: ColorManager.primary,
+          color: ColorManager.lightPrimary,
           width: AppSize.s1_5,
         ),
         borderRadius: BorderRadius.circular(AppSize.s8),

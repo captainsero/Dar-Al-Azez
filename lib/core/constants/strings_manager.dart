@@ -1,15 +1,15 @@
 class AppStrings {
-
   static const String noRouteFound = "Empty Screen";
 
   //* Splash Screen
-    static const String darAlazez = "دار العزيز";
-    static const String forQuran = "لتحفيظ القرآن الكريم";
+  static const String darAlazez = "دار العزيز";
+  static const String forQuran = "لتحفيظ القرآن الكريم";
 
-  
   //* Auth
   static const String helloToDar = "مرحباً بك في دار العزيز";
   static const String login = "تسجيل الدخول";
+
+  static const String phoneNumberHint = "01234567891";
 
   static const String enter = "دخول";
   static const String register = "تسجيل";
@@ -21,5 +21,4 @@ class AppStrings {
   static const String phoneNumber = "رقم الهاتف";
   static const String password = "رمز الدخول";
   static const String passwordConfirm = "تاكيد رمز الدخول";
-
 }
